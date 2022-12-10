@@ -369,7 +369,13 @@ small a:hover {
     body.menu-open .main-nav ul {
         transform: translateX(0);
         box-shadow: -6px 0px 14px rgb(0 0 0 / 20%);
+   
     }
+
+    /* .menu-open .menu-toggle-btn {
+        visibility: hidden;
+        contain: 'X';
+    } */
 
     .main-header .main-nav a {
         display: block;
@@ -401,7 +407,7 @@ small a:hover {
         border: none;
         color: var(--clr0);
         font-size: 1.875rem;
-        position: sticky;
+        /* position: sticky; */
     }
 
     .main-layout>*:not(.full) {
@@ -420,6 +426,7 @@ small a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .card .card-image {
