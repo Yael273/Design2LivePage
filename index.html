@@ -11,6 +11,8 @@
 
 <body class="main-layout">
 
+    <div class="main-screen full" onclick="toggleMenu()"></div>
+
     <header class="main-header flex align-center space-around full">
         <div class="logo">Blogin<span>.</span></div>
         <nav class="main-nav">
@@ -21,8 +23,9 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
     </header>
-    <div class="main-container">
+    <div class="main-container card-layout">
         <div class="card flex space-around ">
             <img src="img/Layer 2.psb.png" alt="" class="card-image">
             <div class="card-text-container flex flex-direction">
@@ -91,7 +94,9 @@
     </footer>
 
     <script>
-
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
     </script>
 
 </body>
