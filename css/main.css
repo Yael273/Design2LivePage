@@ -345,6 +345,12 @@ small a:hover {
 /* MOBILE ONLY */
 
 @media (max-width: 740px) {
+
+    .main-header {
+        position: sticky;
+        top: 0;
+    }
+
     .main-nav ul {
         position: fixed;
         top: 0;
@@ -395,6 +401,7 @@ small a:hover {
         border: none;
         color: var(--clr0);
         font-size: 1.875rem;
+        position: sticky;
     }
 
     .main-layout>*:not(.full) {
@@ -404,7 +411,9 @@ small a:hover {
     }
 
     .main-container {
+        /* padding: 0; */
         padding-top: 1.25rem;
+        /* margin: 0; */
     }
 
     .card {
@@ -566,7 +575,7 @@ small a:hover {
 
     }
 
- 
+
     .main-container {
         /* margin-left: var(--inner-padding);
         margin-right: var(--inner-padding); */
@@ -591,7 +600,7 @@ small a:hover {
         width: 468px;
         /* height: 307px; */
         /* margin-bottom: 1.71428em; */
-        object-fit:cover;
+        object-fit: cover;
         aspect-ratio: 1 /0.65;
     }
 
