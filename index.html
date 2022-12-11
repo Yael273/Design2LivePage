@@ -17,7 +17,17 @@
         <div class="logo">Blogin<span>.</span></div>
         <nav class="main-nav">
             <ul class="flex clean-list">
-                <li><a href="#">Journal</a></li>
+                <div class="dropdown">
+                <li><a href="#" >Journal</a>
+                    
+                        <div class="dropdown-content">
+                        <a href="#">October 2016</a>
+                        <a href="#">January 2017</a>
+                        <a href="#">April 2017</a>
+                        <a href="#">July 2017</a>
+                        </div>
+                      </div>
+                </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
@@ -25,10 +35,10 @@
         </nav>
         <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
     </header>
-    <div class="main-container card-layout">
-        <div class="card flex space-around ">
+    <div class="main-container">
+        <div class="card">
             <img src="img/Layer 2.psb.png" alt="" class="card-image">
-            <div class="card-text-container flex flex-direction">
+            <div class="card-text-container">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque consectetur ratione
@@ -39,10 +49,10 @@
                     porro eius
                     quia.
                 </p>
-                <button class="card-button">Continue Reading</button>
+                <button class="card-button" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
-        <div class="card flex space-around ">
+        <div class="card">
             <img src="img/Layer 3.psb.png" alt="" class="card-image">
             <div class="card-text-container flex flex-direction ">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -55,10 +65,10 @@
                     porro eius
                     quia.
                 </p>
-                <button class="card-button">Continue Reading</button>
+                <button class="card-button" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
-        <div class="card flex space-around ">
+        <div class="card">
             <img src="img/Layer 4.psb.png" alt="" class="card-image">
             <div class="card-text-container flex flex-direction ">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -71,7 +81,7 @@
                     porro eius
                     quia.
                 </p>
-                <button class="card-button">Continue Reading</button>
+                <button class="card-button" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
     </div>
@@ -93,10 +103,40 @@
 
     </footer>
 
+    <div class="modal full">
+        <div class="modal-content">
+            <div class="form-container">
+                <h1>Join us to get access to the latest stories!</h1>
+                <form id="userPrefForm" onsubmit="onSaveSettings(event)">
+
+                    <label for="userName">E-mail:</label>
+                    <input type="email" name="email" required placeholder="example@gmail.com">
+
+                    <button class="modal-button">Submit</button>
+                </form>
+            
+            <button class="modal-button-close" onclick="onCloseModal()">Close</button>
+        </div>
+        </div>
+    </div>
+
     <script>
         function toggleMenu() {
             document.body.classList.toggle('menu-open')
         }
+
+        function onOpenModal() {
+            document.querySelector('.modal').classList.add('open')
+        }
+
+        function onCloseModal() {
+            document.querySelector('.modal').classList.remove('open')
+        }
+
+        function onSaveSettings(ev){
+            ev.preventDefault()
+        }
+
     </script>
 
 </body>
