@@ -561,6 +561,7 @@ small a:hover {
     }
 
     .modal {
+        color: #0000;
         display: none;
         position: fixed;
         z-index: 1;
@@ -574,7 +575,7 @@ small a:hover {
     }
 
     .modal-content {
-
+        color: #0000;
         font-family: Lato;
         text-align: center;
         border-radius: 1em;
@@ -612,6 +613,7 @@ small a:hover {
         top: 0;
         width: 100%;
         z-index: 1;
+        padding: 1.25rem 0;
     }
 
     /* .main-nav{
