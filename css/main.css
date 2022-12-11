@@ -438,6 +438,7 @@ small a:hover {
 }
 
 .modal .modal-button {
+    color: black;
     border-radius: 1em;
     margin-top: 1em;
     border: none;
@@ -454,6 +455,7 @@ small a:hover {
 }
 
 .modal-button-close {
+    color: black;
     border-radius: 1em;
     margin-top: 1em;
     border: none;
@@ -561,7 +563,6 @@ small a:hover {
     }
 
     .modal {
-        color: #0000;
         display: none;
         position: fixed;
         z-index: 1;
@@ -575,7 +576,6 @@ small a:hover {
     }
 
     .modal-content {
-        color: #0000;
         font-family: Lato;
         text-align: center;
         border-radius: 1em;
