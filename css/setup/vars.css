@@ -1,0 +1,19 @@
+:root {
+    /* pallete */
+    --clr0: #ffffff;
+    --clr1: #292929;
+    --clr2: #58c93a;
+    --clr3: #1d1d1d;
+    --clr4: #e1e0e0;
+    --clr5: #4f4e4e;
+    --clr6: #606060;
+
+    /* layout */
+    --inner-padding: 260px;
+    /* --middle-padding: 30px; */
+
+    /* bp */
+    --s: 600px;
+    --m: 900px;
+    --l: 1500px;
+}

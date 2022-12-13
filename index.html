@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/setup/font-face.css">
+    <link rel="stylesheet" href="css/setup/vars.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Blogin</title>
 </head>
@@ -35,9 +37,9 @@
         </nav>
         <button class="menu-toggle-btn" onclick="toggleMenu()">☰</button>
     </header>
-    <div class="main-container">
-        <div class="card">
-            <img src="img/Layer 2.psb.png" alt="" class="card-image">
+    <div class="main-container main-container">
+        <div class="card flex">
+            <div class="img-container"><img src="img/Layer 2.psb.png" alt="" class="card-image"></div>
             <div class="card-text-container">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                 <p class="card-text">
@@ -52,9 +54,9 @@
                 <button class="card-button" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
-        <div class="card">
-            <img src="img/Layer 3.psb.png" alt="" class="card-image">
-            <div class="card-text-container flex flex-direction ">
+        <div class="card flex">
+            <div class="img-container"><img src="img/Layer 3.psb.png" alt="" class="card-image"></div>
+            <div class="card-text-container">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque consectetur ratione
@@ -68,9 +70,9 @@
                 <button class="card-button" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
-        <div class="card">
-            <img src="img/Layer 4.psb.png" alt="" class="card-image">
-            <div class="card-text-container flex flex-direction ">
+        <div class="card flex">
+            <div class="img-container"><img src="img/Layer 4.psb.png" alt="" class="card-image"></div>
+            <div class="card-text-container">
                 <h1 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
                 <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque consectetur ratione
@@ -95,10 +97,15 @@
         <div class="logo">Blogin<span>.</span></div>
         <small>2014 Blogin.com - All Rights Reserved - Find more free Templates at <a href="#">Pixelhint.com</a></small>
         <ul class="social-links flex align-center justify-center clean-list">
-            <li><a href="#"><img class="icon" src="img/icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="#" class="fa facebook"></a></li>
+            <li><a href="#" class="fa twitter"></a></li>
+            <li><a href="#" class="fa behance"></a></li>
+            <li><a href="#" class="fa dribbble"></a></li>
+
+            <!-- <li><a href="#"><img class="icon" src="img/icons/facebook.png" alt="facebook"></a></li>
             <li><a href="#"><img class="icon" src="img/icons/twitter.png" alt="twitter"></a></li>
             <li><a href="#"><img class="icon" src="img/icons/behance.png" alt="behance"></a></li>
-            <li><a href="#"><img class="icon" src="img/icons/square-dribbble.svg" alt="internet"></a></li>
+            <li><a href="#"><img class="icon" src="img/icons/square-dribbble.svg" alt="internet"></a></li> -->
         </ul>
 
     </footer>

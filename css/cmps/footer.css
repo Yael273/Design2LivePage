@@ -1,0 +1,60 @@
+
+
+.main-footer {
+    height: 19.6875rem;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+small {
+    color: #a6a6a6;
+    margin: 2.5rem 0;
+}
+
+small a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #a6a6a6;
+}
+
+small a:hover {
+    color: var(--clr2);
+}
+
+/* FONT AWESOME */
+
+.social-links a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color:var(--clr2);
+}
+
+
+/* .social-links li {
+    margin: 1rem;
+}
+
+.social-links a {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.social-links a:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.icon {
+    width: 2.5rem;
+} */
